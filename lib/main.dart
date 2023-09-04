@@ -61,7 +61,7 @@ class ListViewComponent extends StatefulWidget {
 }
 
 class _ListViewComponentState extends State<ListViewComponent> {
-  List<int> entries = <int>[1,2,4,2,5,3,7,1,3,8,2];
+  List<int> entries = <int>[9,2,8,1,7,3,6,4,5];
   int colorIndex = -1;
   int colorCompareIndex = -1;
 
@@ -107,7 +107,7 @@ class _ListViewComponentState extends State<ListViewComponent> {
 
       setState(() {
         colorCompareIndex = i ;
-      }); // Liste sıralandığında widget'i güncelle
+      }); // Update widget with state.
     }
     snackBarWidget("Insertion Sort Finished");
   }
